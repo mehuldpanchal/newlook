@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
     
     await resend.emails.send({
       from: 'New Look Website <noreply@newlookpaving.com>',
-      to: 'newlook7@myyahoo.com',
+      to: 'contact.newlookpavingandmasonry@gmail.com',
       subject: `New Contact Form Submission - ${data.service}`,
       html: `
         <h2>New Contact Form Submission</h2>

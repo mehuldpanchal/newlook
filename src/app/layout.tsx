@@ -102,7 +102,7 @@ export default function RootLayout({
               "@id": "https://newlookpaving.com",
               url: "https://newlookpaving.com",
               telephone: "703-725-3110",
-              email: "newlook7@myyahoo.com",
+              email: "contact.newlookpavingandmasonry@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "2215 Plank Rd",

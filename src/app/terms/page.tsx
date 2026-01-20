@@ -142,7 +142,7 @@ export default function TermsPage() {
               <p className="text-dark-500">2215 Plank Rd</p>
               <p className="text-dark-500">Fredericksburg, VA 22401</p>
               <p className="text-dark-500">Phone: 703-725-3110</p>
-              <p className="text-dark-500">Email: newlook7@myyahoo.com</p>
+              <p className="text-dark-500">Email: contact.newlookpavingandmasonry@gmail.com</p>
             </div>
 
             <h2 className="text-2xl font-bold text-dark mb-4 mt-8">

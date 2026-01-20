@@ -147,11 +147,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:newlook7@myyahoo.com"
+                  href="mailto:contact.newlookpavingandmasonry@gmail.com"
                   className="flex items-start text-white/80 hover:text-gold transition-colors"
                 >
                   <Mail className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
-                  <span>newlook7@myyahoo.com</span>
+                  <span>contact.newlookpavingandmasonry@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start text-white/80">

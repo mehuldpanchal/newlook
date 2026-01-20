@@ -9,17 +9,21 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react";
 const navigation = [
   { name: "Home", href: "/" },
   {
-    name: "Services",
+    name: "Paving & Masonry",
     href: "/services",
     children: [
-      { name: "— PAVING & MASONRY —", href: "/services", isHeader: true },
       { name: "Driveways", href: "/services/driveways" },
       { name: "Patios & Walkways", href: "/services/patios" },
       { name: "Retaining Walls", href: "/services/retaining-walls" },
       { name: "Sealing & Cleaning", href: "/services/sealing" },
       { name: "Hardscaping", href: "/services/hardscaping" },
       { name: "Landscape Integration", href: "/services/landscape" },
-      { name: "— ROOFING & SIDING —", href: "/services", isHeader: true },
+    ],
+  },
+  {
+    name: "Roofing & Siding",
+    href: "/services",
+    children: [
       { name: "Roofing", href: "/services/roofing" },
       { name: "Vinyl Siding", href: "/services/siding" },
       { name: "Seamless Gutters", href: "/services/gutters" },
@@ -78,7 +82,7 @@ export default function Header() {
                 alt="New Look Paving & Masonry"
                 width={140}
                 height={70}
-                className="h-10 md:h-14 w-auto"
+                className="h-10 md:h-14 lg:h-24 w-auto"
                 priority
               />
             </motion.div>
@@ -123,22 +127,13 @@ export default function Header() {
                           className="bg-white rounded-lg shadow-xl py-2 min-w-[220px]"
                         >
                           {item.children.map((child) => (
-                            child.isHeader ? (
-                              <div
-                                key={child.name}
-                                className="px-4 py-2 text-xs font-bold text-primary uppercase tracking-wider bg-light/50"
-                              >
-                                {child.name.replace(/—/g, '').trim()}
-                              </div>
-                            ) : (
-                              <Link
-                                key={child.name}
-                                href={child.href}
-                                className="block px-4 py-2 text-dark hover:bg-light hover:text-primary transition-colors"
-                              >
-                                {child.name}
-                              </Link>
-                            )
+                            <Link
+                              key={child.name}
+                              href={child.href}
+                              className="block px-4 py-2 text-dark hover:bg-light hover:text-primary transition-colors"
+                            >
+                              {child.name}
+                            </Link>
                           ))}
                         </motion.div>
                       )}
@@ -218,23 +213,14 @@ export default function Header() {
                               className="bg-primary-950 overflow-hidden"
                             >
                               {item.children.map((child) => (
-                                child.isHeader ? (
-                                  <div
-                                    key={child.name}
-                                    className="px-6 py-2 text-xs font-bold text-gold uppercase tracking-wider border-t border-white/10 mt-2 first:mt-0 first:border-0"
-                                  >
-                                    {child.name.replace(/—/g, '').trim()}
-                                  </div>
-                                ) : (
-                                  <Link
-                                    key={child.name}
-                                    href={child.href}
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="block px-8 py-3 text-white/80 hover:text-gold transition-colors min-h-[44px]"
-                                  >
-                                    {child.name}
-                                  </Link>
-                                )
+                                <Link
+                                  key={child.name}
+                                  href={child.href}
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                  className="block px-8 py-3 text-white/80 hover:text-gold transition-colors min-h-[44px]"
+                                >
+                                  {child.name}
+                                </Link>
                               ))}
                             </motion.div>
                           )}

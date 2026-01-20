@@ -351,7 +351,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="mailto:newlook7@myyahoo.com"
+                  href="mailto:contact.newlookpavingandmasonry@gmail.com"
                   className="flex items-start hover:text-gold transition-colors"
                 >
                   <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
@@ -359,7 +359,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-white/70 text-sm">Email</p>
-                    <p className="text-lg font-semibold">newlook7@myyahoo.com</p>
+                    <p className="text-lg font-semibold">contact.newlookpavingandmasonry@gmail.com</p>
                   </div>
                 </a>
 
