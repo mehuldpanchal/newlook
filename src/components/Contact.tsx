@@ -12,25 +12,6 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 lg:py-28 bg-light">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-12"
-        >
-          <span className="text-primary font-semibold uppercase tracking-wider text-sm">
-            Get In Touch
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark mt-3 mb-5">
-            Contact Us
-          </h2>
-          <p className="text-lg text-dark-500">
-            Ready to transform your property? Contact us today for a free
-            estimate. We&apos;re here to help bring your vision to life.
-          </p>
-        </motion.div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Contact Info Card */}
           <motion.div
