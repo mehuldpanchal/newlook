@@ -103,30 +103,19 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden"
+            className="rounded-2xl shadow-xl overflow-hidden h-full min-h-[400px]"
           >
-            <div className="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.826456!2d-77.4605!3d38.3032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6c1f0d7f5a9b5%3A0x1234567890abcdef!2s2215%20Plank%20Rd%2C%20Fredericksburg%2C%20VA%2022401!5e0!3m2!1sen!2sus!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="New Look Paving & Masonry Location"
-              />
-            </div>
-            <div className="p-4 bg-light">
-              <a
-                href="https://maps.google.com/?q=2215+Plank+Rd,+Fredericksburg,+VA+22401"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:text-primary-700 font-semibold text-center block"
-              >
-                Get Directions →
-              </a>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.826456!2d-77.4605!3d38.3032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6c1f0d7f5a9b5%3A0x1234567890abcdef!2s2215%20Plank%20Rd%2C%20Fredericksburg%2C%20VA%2022401!5e0!3m2!1sen!2sus!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="New Look Paving & Masonry Location"
+              className="w-full h-full"
+            />
           </motion.div>
         </div>
       </div>
